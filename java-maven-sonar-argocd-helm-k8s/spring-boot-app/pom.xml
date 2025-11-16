@@ -66,13 +66,7 @@
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                 <groupID>org.sonarsource.scanner.maven</groupID>
-                 <artifactID>sonar-maven-plugin</artifactID>
-                 <version>3.9.1.2184</version>
-            </plugin>     
+            </plugin>   
 
         </plugins>
     </build>
