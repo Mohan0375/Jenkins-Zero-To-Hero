@@ -57,6 +57,7 @@ pipeline {
                     git config user.name "Mohan Manda"
                     BUILD_NUMBER=${BUILD_NUMBER}
                     sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
+                    
                     git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}" || echo "No changes to commit"
                     git remote set-url origin https://Mohan0375:${GITHUB_TOKEN}@github.com/Mohan0375/Jenkins-Zero-To-Hero.git
