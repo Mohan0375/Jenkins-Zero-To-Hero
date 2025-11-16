@@ -68,11 +68,11 @@
                 </configuration>
             </plugin>
 
-            </plugin>
+            <plugin>
                  <groupID>org.sonarsource.scanner.maven</groupID>
                  <artifactID>sonar-maven-plugin</artifactID>
                  <version>3.9.1.2184</version>
-            </plugins>     
+            </plugin>     
 
         </plugins>
     </build>
