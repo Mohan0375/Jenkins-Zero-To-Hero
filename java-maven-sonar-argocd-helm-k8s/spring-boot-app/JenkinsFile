@@ -60,7 +60,7 @@ pipeline {
                     
                     git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}" || echo "No changes to commit"
-                    git remote set-url origin https://Mohan0375:${GITHUB_TOKEN}@github.com/Mohan0375/Jenkins-Zero-To-Hero.git
+                    git remote set-url origin https://${GITHUB_TOKEN}@github.com/Mohan0375/Jenkins-Zero-To-Hero.git
                     git push origin HEAD:main
                 '''
             }
