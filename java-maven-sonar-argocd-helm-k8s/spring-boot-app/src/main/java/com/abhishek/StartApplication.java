@@ -15,7 +15,7 @@ public class StartApplication {
     public String index(final Model model) {
         model.addAttribute("title", "This is my first successful CICD Pipeline ");
         model.addAttribute("msg", "This application is deployed on to Kubernetes using Argo CD");
-        model.addattribute("msg", "I have successfully finished my first CICD");
+        model.addAttribute("msg", "I have successfully finished my first CICD");
         return "index";
     }
 
